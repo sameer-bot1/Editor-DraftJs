@@ -1,22 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import Instruction from "./components/Instruction";
+import RichEditor from "./components/RichEditor2";
+import Title from "./components/Title";
+
 
 function App() {
+
+  const Edit = styled.div`
+    /* display: flex; */
+    /* justify-content: space-around; */
+  `
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Title/>
+        <Edit>
+
+        <RichEditor/>
+        <Instruction/>
+        </Edit>
       </header>
     </div>
   );
