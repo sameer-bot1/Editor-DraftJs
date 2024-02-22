@@ -63,20 +63,4 @@
     color: #5890ff;
   }
 
-  .DraftEditor-root .public-DraftStyleDefault-block {
-    font-weight: normal;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .DraftEditor-root .public-DraftStyleDefault-block.BOLD {
-    font-weight: bold;
-  }
-  
-  .DraftEditor-root .public-DraftStyleDefault-block.COLOR_RED {
-    color: D2042D;
-  }
-  
-  .DraftEditor-root .public-DraftStyleDefault-block.UNDERLINE {
-    text-decoration: underline;
-  }
+ 

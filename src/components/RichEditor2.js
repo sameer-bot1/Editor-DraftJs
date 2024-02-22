@@ -26,13 +26,9 @@ const TextEditor = () => {
     };
 
     const handleEditorChange = (newEditorState) => {
-        // Save content to localStorage on every change
-        const contentState = newEditorState.getCurrentContent();
-        const contentJson = convertToRaw(contentState);
-        localStorage.setItem('editorContent', JSON.stringify(contentJson));
-
+        // Update editor state
         setEditorState(newEditorState);
-    };
+      };
 
     const handleKeyCommand = (command, currentEditorState) => {
         if (command === 'toggle-heading') {
